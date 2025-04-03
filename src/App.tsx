@@ -1,5 +1,6 @@
 import { Father } from "@/components/setup";
 import { Fishes } from "@/components/fishes";
+import { FamilyWrapper } from "@/components/family";
 
 const App = () => {
   return (
@@ -7,6 +8,8 @@ const App = () => {
       <Father />
       <hr />
       <Fishes />
+      <hr />
+      <FamilyWrapper />
     </>
   );
 };

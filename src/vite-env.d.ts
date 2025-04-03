@@ -1,13 +1,18 @@
 /// <reference types="vite/client" />
 
-type BearType = {
+type BearStoreType = {
   bears: number;
-  incrementBears: () => void;
-  resetBears: () => void;
-  decrementBearsByStep: (step?: number) => void;
-  asyncIncreamentBears: () => void;
+};
 
+type FishStoreType = {
   fishes: number;
-  incrementFishes: () => void;
-  resetFishes: () => void;
+};
+
+type FamilyType = {
+  family: {
+    father: string;
+    mother: string;
+    son: string;
+    daughter?: string;
+  };
 };

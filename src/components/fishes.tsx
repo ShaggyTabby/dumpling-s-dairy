@@ -1,10 +1,9 @@
 import { FC } from "react";
-import useStore from "@/store";
+import useFishStore, { incrementFishes, resetFishes } from "@/store/fishStore";
 
 export const Fishes: FC = () => {
-  const fishes = useStore((state) => state.fishes);
-  const incrementFishes = useStore((state) => state.incrementFishes);
-  const resetFishes = useStore((state) => state.resetFishes);
+  const fishes = useFishStore((state) => state.fishes);
+
   return (
     <>
       <h5>小鱼干的数量{fishes}</h5>
