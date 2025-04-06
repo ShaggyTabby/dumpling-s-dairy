@@ -1,13 +1,9 @@
 /// <reference types="vite/client" />
 
-type BearType = {
+type BearSliceType = {
   bears: number;
-  incrementBears: () => void;
-  resetBears: () => void;
-  decrementBearsByStep: (step?: number) => void;
-  asyncIncreamentBears: () => void;
+};
 
+type FishSliceType = {
   fishes: number;
-  incrementFishes: () => void;
-  resetFishes: () => void;
 };
